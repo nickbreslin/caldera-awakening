@@ -1,8 +1,9 @@
 <template>
   <div class="">
-    <h2>{{ type }}</h2>
-    <pre>{{ items }}</pre>
-    <div v-for="item in items" :key="item.id"><ItemCard v-bind="item" /></div>
+    <div class="h5">{{ type }}</div>
+    <div class="border border-rounded border-secondary p-3">
+      <div v-for="item in items" :key="item.id"><ItemCard v-bind="item" /></div>
+    </div>
   </div>
 </template>
 

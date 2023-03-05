@@ -1,8 +1,10 @@
 <template>
-  <div class="container mt-5">
+  <div class="container-fluid">
     <TheHeader />
-    <router-view />
-    <TheFooter />
+    <div class="container mt-3">
+      <router-view />
+      <TheFooter />
+    </div>
   </div>
 </template>
 

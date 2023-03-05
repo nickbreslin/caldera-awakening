@@ -1,7 +1,13 @@
 <template>
   <div>
     <div class="" ref="card">
-      <div class="d-flex justify-content-between">
+      <div
+        class="d-flex"
+        :class="{
+          'justify-content-between': twoColumn,
+          'justify-content-start': !twoColumn
+        }"
+      >
         <div
           :class="`text-${rarity}`"
           data-bs-toggle="tooltip"
@@ -13,7 +19,13 @@
         >
           [{{ label }}]
         </div>
-        <div>{{ amount }}</div>
+        <div
+          :class="{
+            'ms-3': !twoColumn
+          }"
+        >
+          {{ amount }}
+        </div>
       </div>
     </div>
   </div>
@@ -29,7 +41,11 @@ export default {
     label: String,
     description: String,
     amount: Number,
-    rarity: String
+    rarity: String,
+    twoColumn: {
+      type: Boolean,
+      default: true
+    }
   },
   computed: {},
   mounted() {
