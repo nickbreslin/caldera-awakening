@@ -1,6 +1,69 @@
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  /*font-family: 'Source Sans Pro', sans-serif;*/
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body,
+html {
+  background: #000;
+}
+
+/* Allows game view to fit to screen with no scrolling */
+/* html,
+body {
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Cinzel Decorative", cursive;
+  font-weight: 600;
+}
+
+/* Rarities or Tiers */
+.text-currency {
+  color: yellow;
+}
+
+/* Rarities or Tiers */
+.text-common {
+  color: lightgray;
+}
+
+.text-uncommon {
+  color: greenyellow;
+}
+
+.text-rare {
+  color: rgb(69, 137, 255)
+    /*55f*/
+  ;
+}
+
+.text-epic {
+  color: gold;
+}
+
+.text-legendary {
+  color: rgb(220, 45, 255);
+}
+
+.text-mythic {
+  color: rgb(255, 25, 0);
+}
+
+.bg-verydark {
+  background: #060606;
 }

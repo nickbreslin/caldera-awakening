@@ -6,9 +6,10 @@ import store from "./store";
 
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "bootswatch/dist/lumen/bootstrap.min.css"; // lumen, or cyborg
+import "bootswatch/dist/cyborg/bootstrap.min.css"; // lumen, or cyborg
 
 import "@/css/style.css";
+import "@/css/fonts.css";
 
 const app = createApp(App).use(store).use(router);
 
