@@ -1,0 +1,14 @@
+[
+  {
+    "id": "gold",
+    "label": "Gold",
+    "type": "currency",
+    "rarity":"currency"
+  },
+  {
+    "id": "stone",
+    "label": "Stone",
+    "type": "currency",
+    "rarity": "common"
+  }
+]

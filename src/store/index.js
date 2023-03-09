@@ -1,6 +1,7 @@
 import { createStore } from "vuex";
 
 import inventoryModule from "@/store/inventoryModule";
+import locationsModule from "@/store/locationsModule";
 
 export default createStore({
   state: {},
@@ -8,6 +9,7 @@ export default createStore({
   actions: {},
   getters: {},
   modules: {
-    inventoryModule
+    inventoryModule,
+    locationsModule
   }
 });

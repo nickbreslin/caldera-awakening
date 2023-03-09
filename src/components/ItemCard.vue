@@ -5,7 +5,7 @@
         class="d-flex"
         :class="{
           'justify-content-between': twoColumn,
-          'justify-content-start': !twoColumn
+          'justify-content-end': !twoColumn
         }"
       >
         <div
