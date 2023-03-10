@@ -1,5 +1,5 @@
 {
-  "name": "vue3-bootstrap5-boilerplate",
+  "name": "caldera-awakening",
   "version": "1.0.0",
   "description": "vue3 bootstrap5 boilerplate",
   "license": "Unlicense",
@@ -22,9 +22,9 @@
   "dependencies": {
     "@popperjs/core": "^2.11.6",
     "axios": "^0.21.1",
-    "bootstrap": "^5.1.3",
-    "bootstrap-icons": "^1.7.2",
-    "bootswatch": "^5.1.3",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.3",
+    "bootswatch": "^5.2.3",
     "core-js": "^3.12.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",

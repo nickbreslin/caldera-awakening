@@ -1,23 +1,31 @@
 <template>
   <div>
-    <!-- <div class="">...</div>-->
-    <!-- Equipment -->
-    <ItemGroup type="currency" />
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-4">
+        <TaskList />
+      </div>
+      <div class="col">
+        <!--   <ItemGroup v-if="0" type="currency" />
 
-    <LocationsList />
+        <LocationsList v-if="0" />-->
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import ItemGroup from "@/components/ItemGroup";
-import LocationsList from "@/components/LocationsList";
+import TaskList from "@/components/TaskList";
+
+//import ItemGroup from "@/components/ItemGroup";
+//import LocationsList from "@/components/LocationsList";
 
 export default {
   name: "Main",
   components: {
-    ItemGroup,
-    LocationsList
+    TaskList
+    //  ItemGroup,
+    //  LocationsList
   }
 };
 </script>
