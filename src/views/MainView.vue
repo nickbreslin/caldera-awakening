@@ -5,9 +5,9 @@
         <TaskList />
       </div>
       <div class="col">
-        <!--   <ItemGroup v-if="0" type="currency" />
+        <ItemGroup type="currency" />
 
-        <LocationsList v-if="0" />-->
+        <LocationsList />
       </div>
     </div>
   </div>
@@ -17,15 +17,15 @@
 // @ is an alias to /src
 import TaskList from "@/components/TaskList";
 
-//import ItemGroup from "@/components/ItemGroup";
-//import LocationsList from "@/components/LocationsList";
+import ItemGroup from "@/components/ItemGroup";
+import LocationsList from "@/components/LocationsList";
 
 export default {
   name: "Main",
   components: {
-    TaskList
-    //  ItemGroup,
-    //  LocationsList
+    TaskList,
+    ItemGroup,
+    LocationsList
   }
 };
 </script>

@@ -14,7 +14,7 @@
           <span class="mb-0 ms-3 h5 text-warning">Awakening</span>
         </div>
         <div class="gold-wrapper mt-3 text-end">
-          <!-- <ItemCard v-bind="getItem('gold')" :twoColumn="false" />-->
+          <ItemCard v-bind="getItem('gold')" :twoColumn="false" />
         </div>
       </div>
     </div>
@@ -22,14 +22,14 @@
 </template>
 
 <script>
-//import ItemCard from "@/components/ItemCard";
+import ItemCard from "@/components/ItemCard";
 
 import { mapGetters } from "vuex";
 
 export default {
   name: "TheHeader",
   components: {
-    //  ItemCard
+    ItemCard
   },
   computed: {
     ...mapGetters("inventoryModule", ["getItem"])

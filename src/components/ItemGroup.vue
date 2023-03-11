@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="h5">{{ type }}</div>
-    <div class="border border-rounded border-secondary p-3">
+    <div class="border rounded border-secondary p-3">
       <div v-for="item in items" :key="item.id"><ItemCard v-bind="item" /></div>
     </div>
   </div>

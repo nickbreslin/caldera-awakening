@@ -22,7 +22,7 @@
       </div>
     </div>
     <!-- -->
-    <div class="h5 border-bottom border-secondary">Quests</div>
+    <div class="h5 border-bottom border-info text-info pb-1 mb-2">Quests</div>
     <div class="card mb-2">
       <div
         class="card-header bg-light"
