@@ -6,7 +6,17 @@ import locationsModule from "@/store/locationsModule";
 export default createStore({
   state: {},
   mutations: {},
-  actions: {},
+  actions: {
+    doTick({ commit }) {
+      //console.log("ACTION > doTick");
+
+      commit(
+        "inventoryModule/ADD_ITEM",
+        { id: "gold", amount: 1 },
+        { root: true }
+      );
+    }
+  },
   getters: {},
   modules: {
     inventoryModule,

@@ -12,8 +12,7 @@
           :class="`text-${rarity}`"
           data-bs-toggle="tooltip"
           data-bs-placement="top"
-          title="test"
-          :data-bs-title="`<div class='text-start'><span class=' fw-bold text-${rarity}'>${label}</span><br/>${description}.<br/><i>You have: ${amount}</i></div>`"
+          :data-bs-title="`<div class='text-start'><span class=' fw-bold text-${rarity}'>${label}</span><br/><!---${description}.<br/>--><i>You have: ${amount}</i></div>`"
           data-bs-custom-class="custom-tooltip"
           data-bs-html="true"
         >
@@ -55,8 +54,6 @@ export default {
     [...tooltipTriggerList].map(
       (tooltipTriggerEl) => new Tooltip(tooltipTriggerEl)
     );
-
-    console.log("done");
   }
 };
 </script>

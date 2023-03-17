@@ -6,8 +6,12 @@
       </div>
       <div class="col">
         <ItemGroup type="currency" />
+        <div class="mt-4"></div>
+        <ItemGroup type="resource" />
+        <div class="mt-4"></div>
+        <ItemGroup type="treasure" />
 
-        <LocationsList />
+        <LocationsList v-if="0" />
       </div>
     </div>
   </div>

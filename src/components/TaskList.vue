@@ -7,21 +7,22 @@
       <div class="card-body m-0 py-0 px-2 pt-2 rounded-bottom">
         <div class="card mb-2">
           <div
-            class="card-header bg-light"
+            class="card-header collapsed bg-light"
             data-bs-toggle="collapse"
             data-bs-target="#task1"
+            aria-expanded="false"
             role="button"
           >
             <div class="fw-bold">Task 1</div>
           </div>
 
-          <div id="task1" class="collapse">
+          <div id="task1" class="collapse" ref="collapse">
             <div class="card-body">....</div>
           </div>
         </div>
       </div>
     </div>
-    <!-- -->
+    <!--
     <div class="h5 border-bottom border-info text-info pb-1 mb-2">Quests</div>
     <div class="card mb-2">
       <div
@@ -37,7 +38,7 @@
         <div class="card-body">....</div>
       </div>
     </div>
-    <!-- -->
+
     <div class="h5 mt-5">Quests</div>
     <div class="border border-secondary p-2 rounded">
       <div class="card mb-2">
@@ -55,6 +56,7 @@
         </div>
       </div>
     </div>
+    -->
   </div>
 </template>
 
@@ -105,10 +107,9 @@ export default {
       console.log("Show");
     });
 
-    const collapseElementList = document.querySelectorAll(".collapse", {
+    new Collapse(this.$refs.collapse, {
       toggle: false
     });
-    [...collapseElementList].map((collapseEl) => new Collapse(collapseEl));
   }
 };
 </script>

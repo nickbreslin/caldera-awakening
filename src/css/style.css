@@ -34,7 +34,7 @@ h6,
 
 /* Rarities or Tiers */
 .text-currency {
-  color: yellow;
+  color: gold;
 }
 
 /* Rarities or Tiers */
@@ -53,7 +53,7 @@ h6,
 }
 
 .text-epic {
-  color: gold;
+  color: orange;
 }
 
 .text-legendary {

@@ -7,7 +7,7 @@ export default {
   name: "TheTickSilent",
   data: function () {
     return {
-      tick: 6000,
+      tick: 1000,
       step: 100,
       interval: null,
       beginTs: new Date()
@@ -15,16 +15,13 @@ export default {
   },
   methods: {
     doTick() {
-      console.log("doTick...");
-      setTimeout(() => this.beginTransition(), 10);
-
       this.$store.dispatch("doTick", 1);
 
       //emit now.
 
       /* SetInterval would be better,
        but this works with the transition without having to recalculate each tick */
-      setTimeout(() => this.doTick(), 6000);
+      setTimeout(() => this.doTick(), this.tick);
     }
   },
 

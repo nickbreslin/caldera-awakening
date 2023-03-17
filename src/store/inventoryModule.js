@@ -42,7 +42,7 @@ const inventoryModule = {
 
         return item;
       });
-      console.log(items);
+
       return items;
     },
     getItem: (_state, getters) => (id) => {
@@ -50,7 +50,6 @@ const inventoryModule = {
       return item;
     },
     getByType: (_state, getters) => (type) => {
-      console.log(type);
       const item = getters.getAll.filter((item) => item.type == type);
       return item;
     }

@@ -3,12 +3,18 @@
     "id": "gold",
     "label": "Gold",
     "type": "currency",
-    "rarity":"currency"
+    "rarity": "currency"
   },
   {
     "id": "stone",
     "label": "Stone",
-    "type": "currency",
+    "type": "resource",
+    "rarity": "common"
+  },
+  {
+    "id": "treasure",
+    "label": "Treasure Box",
+    "type": "treasure",
     "rarity": "common"
   }
 ]
