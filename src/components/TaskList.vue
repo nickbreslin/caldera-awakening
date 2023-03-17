@@ -1,6 +1,6 @@
 <template>
   <div id="tasklist">
-    <div class="card border border-secondary mb-5">
+    <div class="card border border-secondary mb-5 d-none">
       <div class="card-header border-bottom border-secondary bg-light h5">
         Quests
       </div>
@@ -22,7 +22,7 @@
         </div>
       </div>
     </div>
-    <!--
+
     <div class="h5 border-bottom border-info text-info pb-1 mb-2">Quests</div>
     <div class="card mb-2">
       <div
@@ -38,25 +38,6 @@
         <div class="card-body">....</div>
       </div>
     </div>
-
-    <div class="h5 mt-5">Quests</div>
-    <div class="border border-secondary p-2 rounded">
-      <div class="card mb-2">
-        <div
-          class="card-header bg-light"
-          data-bs-toggle="collapse"
-          data-bs-target="#task3"
-          role="button"
-        >
-          <div class="fw-bold">Task 1</div>
-        </div>
-
-        <div id="task3" class="collapse show">
-          <div class="card-body">....</div>
-        </div>
-      </div>
-    </div>
-    -->
   </div>
 </template>
 
