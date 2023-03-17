@@ -14,6 +14,7 @@
           <span class="mb-0 ms-3 h5 text-warning">Awakening</span>
         </div>
         <div class="gold-wrapper mt-3 text-end">
+          <TheTick />
           <ItemCard v-bind="getItem('gold')" :twoColumn="false" />
         </div>
       </div>
@@ -23,13 +24,15 @@
 
 <script>
 import ItemCard from "@/components/ItemCard";
+import TheTick from "@/components/TheTickSilent";
 
 import { mapGetters } from "vuex";
 
 export default {
   name: "TheHeader",
   components: {
-    ItemCard
+    ItemCard,
+    TheTick
   },
   computed: {
     ...mapGetters("inventoryModule", ["getItem"])

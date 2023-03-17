@@ -1,5 +1,5 @@
 <template>
-  <div class="progress position-relative" style="width: 100px">
+  <div class="progress position-relative d-none" style="width: 100px">
     <div
       class="progress-bar js-action-bar"
       role="progressbar"
@@ -24,7 +24,7 @@ export default {
       tick: 6000,
       step: 100,
       interval: null,
-      beginTs: new Date(),
+      beginTs: new Date()
     };
   },
   methods: {
@@ -50,14 +50,14 @@ export default {
       /* SetInterval would be better,
        but this works with the transition without having to recalculate each tick */
       setTimeout(() => this.doTick(), 6000);
-    },
+    }
   },
 
   mounted: function () {
     // Start the bar full. Delay a tick, otherwise constant refresh would 'doTick'
     this.progress = 100;
     setTimeout(() => this.doTick(), 10);
-  },
+  }
 };
 </script>
 

@@ -15,7 +15,7 @@
             <div class="fw-bold">Task 1</div>
           </div>
 
-          <div id="task1" class="collapse show">
+          <div id="task1" class="collapse">
             <div class="card-body">....</div>
           </div>
         </div>
@@ -105,7 +105,9 @@ export default {
       console.log("Show");
     });
 
-    const collapseElementList = document.querySelectorAll(".collapse");
+    const collapseElementList = document.querySelectorAll(".collapse", {
+      toggle: false
+    });
     [...collapseElementList].map((collapseEl) => new Collapse(collapseEl));
   }
 };
